@@ -1,0 +1,10 @@
+{
+  "name": "My Codespace",
+  "image": "mcr.microsoft.com/vscode/devcontainers/base:ubuntu",
+  "features": {
+    "ghcr.io/devcontainers/features/sshd:1": {
+      "version": "latest"
+    }
+  },
+  "initializeCommand": "apt-get update && apt-get install -y software-properties-common && add-apt-repository ppa:neovim-ppa/stable && apt-get update && apt-get install -y neovim"
+}
